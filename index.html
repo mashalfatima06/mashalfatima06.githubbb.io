@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MashaAI Connect - AI Appointment Setter & AI Calling Agents</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+<meta name="description" content="MashaAI Connect helps businesses automate growth using AI Appointment Setters and AI Calling Agents. Book more meetings, close more deals, and scale faster with AI." />
+<meta name="keywords" content="AI appointment setter, AI calling agents, AI automation, sales automation, lead generation, AI voice agents, MashaAI Connect" />
+<meta name="author" content="MashaAI Connect" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://mashaaiconnect.it.com/" />
+<meta name="theme-color" content="#0a0f1c" />
+<meta property="og:title" content="MashaAI Connect - AI Appointment Setter & Calling Agents" />
+<meta property="og:description" content="Automate sales, calls, and bookings with AI-powered agents. Grow your business faster with MashaAI Connect." />
+<meta property="og:image" content="https://mashaaiconnect.it.com/social-preview.png" />
+<meta property="og:url" content="https://mashaaiconnect.it.com" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MashaAI Connect" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MashaAI Connect - AI Appointment Setter & Calling Agents" />
+<meta name="twitter:description" content="AI automation for sales calls, appointment booking, and business growth." />
+<meta name="twitter:image" content="https://mashaaiconnect.it.com/social-preview.png" />
+<meta name="application-name" content="MashaAI Connect" />
+<meta name="apple-mobile-web-app-title" content="MashaAI Connect" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<style>
+:root{--cyan:#00c6e0;--cyan2:#00a8c6;--cyan3:#00daf5;--cyan-glow:rgba(0,198,224,0.22);--cyan-glow2:rgba(0,198,224,0.08);--bg:#f8feff;--bg2:#f0fbfd;--surface:#ffffff;--border:rgba(0,198,224,0.18);--border2:rgba(0,198,224,0.35);--dark:#071820;--dark2:#0d2533;--text:#0a1e28;--text2:#3a6070;--text3:#7aa5b5;--green:#22c55e;--gold:#f59e0b;--r:14px;--r2:10px;--shadow:0 4px 24px rgba(0,150,180,0.10);--shadow2:0 12px 48px rgba(0,150,180,0.18)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");pointer-events:none;z-index:9998}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:70px;background:rgba(248,254,255,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:all .3s}
+nav.scrolled{background:rgba(248,254,255,0.97);box-shadow:var(--shadow)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{width:38px;height:38px;object-fit:contain;border-radius:8px}
+.nav-logo-text{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.1rem;color:var(--dark);letter-spacing:-.03em}
+.nav-logo-text span{color:var(--cyan2)}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-size:.875rem;font-weight:500;color:var(--text2);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--cyan2)}
+.nav-cta{padding:9px 22px;background:var(--cyan2);color:#fff;border:none;border-radius:8px;font-size:.875rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;transition:all .2s;box-shadow:0 4px 16px var(--cyan-glow)}
+.nav-cta:hover{background:var(--cyan);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text2);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:rgba(248,254,255,.98);backdrop-filter:blur(20px);padding:20px 5%;flex-direction:column;gap:16px;border-bottom:1px solid var(--border);z-index:199}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--text2);text-decoration:none;font-size:1rem;padding:8px 0;border-bottom:1px solid var(--border)}
+.mobile-menu .nav-cta{width:fit-content;margin-top:4px}
+#hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:100px 5% 60px;text-align:center;position:relative;overflow:hidden}
+.hero-blob{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px)}
+.hero-blob-1{width:700px;height:500px;background:radial-gradient(ellipse,rgba(0,198,224,.15) 0%,transparent 70%);top:-150px;left:-150px}
+.hero-blob-2{width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,198,224,.1) 0%,transparent 70%);bottom:0;right:-100px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:100px;border:1px solid var(--border2);background:rgba(0,198,224,.07);font-size:.78rem;font-weight:600;color:var(--cyan2);margin-bottom:24px;letter-spacing:.05em;text-transform:uppercase;animation:fadeUp .7s ease both}
+.hero-badge::before{content:'●';font-size:.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2.4rem,6.5vw,5rem);font-weight:800;line-height:1.05;letter-spacing:-.04em;max-width:950px;margin:0 auto 20px;color:var(--dark);animation:fadeUp .7s .08s ease both}
+h1 .cyan{color:var(--cyan2)}
+h1 .underline-cyan{position:relative;display:inline-block}
+h1 .underline-cyan::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan),var(--cyan3));border-radius:4px}
+.hero-sub{font-size:clamp(.95rem,2vw,1.15rem);color:var(--text2);max-width:600px;margin:0 auto 40px;font-weight:400;line-height:1.75;animation:fadeUp .7s .16s ease both}
+.hero-cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:fadeUp .7s .24s ease both}
+.btn-main{padding:14px 30px;background:var(--cyan2);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;transition:all .25s;box-shadow:0 6px 24px var(--cyan-glow);display:inline-flex;align-items:center;gap:8px}
+.btn-main:hover{background:var(--cyan);transform:translateY(-2px)}
+.btn-ghost{padding:14px 30px;background:transparent;color:var(--dark);border:1.5px solid var(--border2);border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-ghost:hover{background:var(--bg2);transform:translateY(-2px)}
+.hero-dashboard{margin-top:60px;position:relative;z-index:1;animation:fadeUp .8s .35s ease both;max-width:1000px;width:100%}
+.hero-dashboard img{width:100%;height:auto;border-radius:var(--r);box-shadow:0 32px 80px rgba(0,150,180,.22),0 0 0 1px var(--border);border:1px solid var(--border2)}
+.hero-dashboard::before{content:'';position:absolute;inset:-1px;border-radius:calc(var(--r) + 1px);background:linear-gradient(135deg,var(--cyan2),transparent 50%);z-index:-1;opacity:.25}
+.hero-stats{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-top:48px;padding-top:40px;border-top:1px solid var(--border);width:100%;max-width:700px;animation:fadeUp .7s .4s ease both}
+.stat{text-align:center}
+.stat-n{font-family:'Bricolage Grotesque',sans-serif;font-size:2rem;font-weight:800;color:var(--dark);line-height:1}
+.stat-n span{color:var(--cyan2)}
+.stat-l{font-size:.75rem;color:var(--text3);margin-top:4px;text-transform:uppercase;letter-spacing:.07em}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+#trusted{padding:36px 5%;background:var(--dark);border-top:1px solid rgba(255,255,255,.05)}
+.trusted-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px}
+.trusted-label{font-size:.75rem;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase;text-align:center}
+.trusted-logos{display:flex;gap:36px;flex-wrap:wrap;justify-content:center}
+.tlogo{font-family:'Bricolage Grotesque',sans-serif;font-size:.9rem;font-weight:700;color:rgba(255,255,255,.35);transition:color .2s}
+.tlogo:hover{color:rgba(0,198,224,.6)}
+.section{position:relative;padding:96px 5%}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-center{text-align:center}
+.tag{display:inline-block;padding:5px 14px;border-radius:100px;border:1px solid var(--border2);background:rgba(0,198,224,.07);font-size:.73rem;font-weight:700;color:var(--cyan2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.sec-title{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.7rem,4vw,2.7rem);font-weight:800;letter-spacing:-.04em;line-height:1.1;margin-bottom:14px;color:var(--dark)}
+.sec-sub{font-size:1rem;color:var(--text2);max-width:560px;line-height:1.75}
+.sec-sub.center{margin:0 auto}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+#services{background:var(--bg)}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+.svc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:44px;transition:all .3s;position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--cyan2),var(--cyan3));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.svc-card:hover{border-color:var(--border2);box-shadow:var(--shadow2);transform:translateY(-4px)}
+.svc-card:hover::before{transform:scaleX(1)}
+.svc-icon{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;font-size:1.6rem;background:linear-gradient(135deg,rgba(0,198,224,.12),rgba(0,198,224,.04));border:1px solid var(--border2);margin-bottom:24px}
+.svc-card h3{font-family:'Bricolage Grotesque',sans-serif;font-size:1.45rem;font-weight:800;letter-spacing:-.03em;margin-bottom:10px;color:var(--dark)}
+.svc-card p{color:var(--text2);font-size:.95rem;line-height:1.72;margin-bottom:24px}
+.svc-feats{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:28px}
+.svc-feats li{display:flex;align-items:flex-start;gap:9px;font-size:.875rem;color:var(--text2);line-height:1.5}
+.svc-feats li::before{content:'✓';color:var(--cyan2);font-weight:700;flex-shrink:0}
+.svc-link{display:inline-flex;align-items:center;gap:6px;font-size:.875rem;font-weight:700;color:var(--cyan2);text-decoration:none;transition:gap .2s}
+.svc-link:hover{gap:10px}
+#how{background:var(--dark);overflow:hidden}
+#how .sec-title,#how .tag{color:#fff}
+#how .sec-sub{color:rgba(255,255,255,.55)}
+.how-tabs{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+.how-tab{padding:9px 22px;border-radius:100px;border:1px solid rgba(255,255,255,.15);background:transparent;color:rgba(255,255,255,.5);font-size:.85rem;font-weight:600;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all .25s}
+.how-tab.active{background:var(--cyan2);border-color:var(--cyan2);color:#fff}
+.how-panels{margin-top:40px}
+.how-panel{display:none}
+.how-panel.active{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+.how-steps{display:flex;flex-direction:column;gap:0}
+.how-step{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.how-step:last-child{border-bottom:none}
+.step-num{width:36px;height:36px;border-radius:50%;background:rgba(0,198,224,.15);border:1px solid rgba(0,198,224,.3);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:800;color:var(--cyan3);flex-shrink:0;margin-top:2px}
+.step-body h4{font-family:'Bricolage Grotesque',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px}
+.step-body p{font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.65}
+.how-visual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px}
+.how-visual-title{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.flow{display:flex;flex-direction:column;gap:0}
+.flow-node{display:flex;align-items:center;gap:14px;padding:14px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px}
+.flow-icon{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;font-size:1rem;flex-shrink:0}
+.flow-icon.c{background:rgba(0,198,224,.15);border:1px solid rgba(0,198,224,.25)}
+.flow-icon.g{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2)}
+.flow-icon.o{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2)}
+.flow-text{font-size:.82rem;color:rgba(255,255,255,.7);line-height:1.4}
+.flow-text strong{color:#fff;font-weight:600}
+.flow-arrow{text-align:center;color:var(--cyan2);font-size:.8rem;padding:4px 0;opacity:.5}
+.call-log{display:flex;flex-direction:column;gap:10px}
+.clog{display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px}
+.clog-av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:.8rem;flex-shrink:0;background:linear-gradient(135deg,var(--cyan2),var(--cyan3))}
+.clog-info{flex:1}
+.clog-name{font-size:.82rem;font-weight:600;color:#fff}
+.clog-sub{font-size:.72rem;color:rgba(255,255,255,.4)}
+.clog-badge{font-size:.68rem;padding:3px 9px;border-radius:100px;font-weight:700}
+.cb-booked{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+.cb-live{background:rgba(0,198,224,.1);color:var(--cyan3);border:1px solid rgba(0,198,224,.2)}
+.cb-q{background:rgba(245,158,11,.1);color:#fbbf24;border:1px solid rgba(245,158,11,.2)}
+.wave{display:flex;align-items:center;gap:2px}
+.wave span{display:block;width:3px;border-radius:3px;background:var(--cyan3);animation:wave .8s ease-in-out infinite}
+.wave span:nth-child(1){height:6px;animation-delay:0s}
+.wave span:nth-child(2){height:12px;animation-delay:.1s}
+.wave span:nth-child(3){height:8px;animation-delay:.2s}
+.wave span:nth-child(4){height:14px;animation-delay:.15s}
+.wave span:nth-child(5){height:6px;animation-delay:.05s}
+@keyframes wave{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.35)}}
+#usecases{background:var(--bg2)}
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.uc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:all .3s}
+.uc-card:hover{border-color:var(--border2);box-shadow:var(--shadow);transform:translateY(-3px)}
+.uc-icon{font-size:2rem;margin-bottom:14px}
+.uc-card h4{font-family:'Bricolage Grotesque',sans-serif;font-size:1rem;font-weight:800;letter-spacing:-.02em;margin-bottom:8px;color:var(--dark)}
+.uc-card p{font-size:.855rem;color:var(--text2);line-height:1.65}
+.uc-tag{display:inline-block;margin-top:12px;font-size:.72rem;font-weight:700;color:var(--cyan2);background:rgba(0,198,224,.08);border:1px solid var(--border);border-radius:100px;padding:3px 10px}
+#industries{background:var(--bg)}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.ind-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:24px 20px;text-align:center;transition:all .3s}
+.ind-card:hover{border-color:var(--border2);background:linear-gradient(135deg,rgba(0,198,224,.05),var(--surface));transform:translateY(-3px);box-shadow:var(--shadow)}
+.ind-icon{font-size:2rem;margin-bottom:12px}
+.ind-card h4{font-family:'Bricolage Grotesque',sans-serif;font-size:.95rem;font-weight:700;color:var(--dark);margin-bottom:6px}
+.ind-card p{font-size:.78rem;color:var(--text3);line-height:1.5}
+#compare{background:var(--dark);overflow:hidden}
+#compare .sec-title{color:#fff}
+#compare .tag{color:var(--cyan3)}
+.compare-wrap{margin-top:52px;border-radius:var(--r);overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.compare-header{display:grid;grid-template-columns:2fr 1.2fr 1.2fr;background:rgba(255,255,255,.04)}
+.ch-cell{padding:18px 24px;font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.ch-ai{color:var(--cyan3);background:rgba(0,198,224,.1);display:flex;align-items:center;gap:8px}
+.ch-human{color:rgba(255,255,255,.45);display:flex;align-items:center;gap:8px}
+.compare-row{display:grid;grid-template-columns:2fr 1.2fr 1.2fr;border-top:1px solid rgba(255,255,255,.06)}
+.compare-row:hover{background:rgba(255,255,255,.03)}
+.cr-feature{padding:16px 24px;font-size:.9rem;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:10px}
+.cr-ai,.cr-human{padding:16px 24px;display:flex;align-items:center;gap:8px;font-size:.875rem;font-weight:600}
+.cr-ai{color:#4ade80}
+.cr-human{color:rgba(255,255,255,.35)}
+.compare-footer{padding:20px 24px;background:rgba(0,198,224,.08);border-top:1px solid rgba(0,198,224,.2);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.compare-footer p{font-size:.875rem;color:rgba(255,255,255,.65)}
+.compare-footer strong{color:var(--cyan3)}
+#pricing{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.pricing-toggle{display:flex;gap:20px;justify-content:center;margin:36px 0 0;flex-wrap:wrap}
+.ptab{padding:9px 24px;border-radius:100px;border:1.5px solid var(--border2);background:transparent;color:var(--text2);font-size:.875rem;font-weight:700;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all .25s}
+.ptab.active{background:var(--cyan2);border-color:var(--cyan2);color:#fff}
+.pricing-section{display:none;margin-top:52px}
+.pricing-section.active{display:block}
+.setup-banner{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);border-radius:var(--r);padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px;border:1px solid rgba(0,198,224,.2)}
+.setup-banner-left h3{font-family:'Bricolage Grotesque',sans-serif;font-size:1.2rem;font-weight:800;color:#fff;letter-spacing:-.02em}
+.setup-banner-left p{font-size:.85rem;color:rgba(255,255,255,.5);margin-top:4px}
+.setup-price{font-family:'Bricolage Grotesque',sans-serif;font-size:2.2rem;font-weight:800;color:var(--cyan3);white-space:nowrap}
+.setup-price span{font-size:1rem;color:rgba(255,255,255,.4)}
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:36px 28px;position:relative;transition:all .3s}
+.plan-card:hover{border-color:var(--border2);box-shadow:var(--shadow2);transform:translateY(-4px)}
+.plan-card.popular{border-color:rgba(0,198,224,.45);box-shadow:0 0 40px rgba(0,198,224,.1)}
+.plan-card.popular::before{content:'MOST POPULAR';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--cyan2);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.1em;padding:5px 16px;border-radius:0 0 10px 10px}
+.plan-name{font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:800;color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.plan-price{font-family:'Bricolage Grotesque',sans-serif;font-size:2.8rem;font-weight:800;color:var(--dark);line-height:1;margin-bottom:6px}
+.plan-price sup{font-size:1.1rem;vertical-align:super}
+.plan-period{font-size:.8rem;color:var(--text3);margin-bottom:8px}
+.plan-desc{font-size:.85rem;color:var(--text2);line-height:1.6;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.plan-feats{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.plan-feats li{display:flex;align-items:center;gap:9px;font-size:.875rem;color:var(--text2)}
+.plan-feats li::before{content:'✓';color:var(--cyan2);font-weight:800;flex-shrink:0}
+.plan-btn{width:100%;padding:13px;border-radius:10px;font-size:.95rem;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:all .25s;display:block;text-align:center;text-decoration:none}
+.plan-btn-outline{background:transparent;border:1.5px solid var(--border2);color:var(--text)}
+.plan-btn-outline:hover{background:var(--bg2);border-color:var(--cyan2);color:var(--cyan2)}
+.plan-btn-fill{background:var(--cyan2);border:none;color:#fff;box-shadow:0 4px 16px var(--cyan-glow)}
+.plan-btn-fill:hover{background:var(--cyan)}
+.calling-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.calling-info h3{font-family:'Bricolage Grotesque',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-.03em;color:var(--dark);margin-bottom:12px}
+.calling-info p{font-size:.95rem;color:var(--text2);line-height:1.7;margin-bottom:20px}
+.calling-feats{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.calling-feats li{display:flex;align-items:center;gap:9px;font-size:.875rem;color:var(--text2)}
+.calling-feats li::before{content:'✓';color:var(--cyan2);font-weight:800}
+.calling-pricing-box{background:linear-gradient(135deg,var(--dark),var(--dark2));border-radius:var(--r);padding:36px;text-align:center;border:1px solid rgba(0,198,224,.2)}
+.calling-pricing-box h4{font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:800;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.calling-setup{margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.cs-label,.cu-label{font-size:.75rem;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.cs-val{font-family:'Bricolage Grotesque',sans-serif;font-size:2rem;font-weight:800;color:#fff}
+.cs-sub{font-size:.75rem;color:rgba(255,255,255,.35);margin-top:3px}
+.calling-usage{margin-top:16px}
+.cu-val{font-family:'Bricolage Grotesque',sans-serif;font-size:2.4rem;font-weight:800;color:var(--cyan3)}
+.cu-sub{font-size:.8rem;color:rgba(255,255,255,.4);margin-top:4px}
+#cta{background:var(--dark);text-align:center;padding:96px 5%;position:relative;overflow:hidden}
+.cta-blob{position:absolute;width:700px;height:400px;background:radial-gradient(ellipse,rgba(0,198,224,.14) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.cta-inner{position:relative;z-index:1;max-width:720px;margin:0 auto}
+.cta-inner h2{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.04em;color:#fff;margin-bottom:16px}
+.cta-inner>p{font-size:1rem;color:rgba(255,255,255,.55);margin-bottom:36px;line-height:1.7}
+.cta-form{display:grid;gap:22px;max-width:720px;margin:0 auto 16px;text-align:left}
+.form-group{display:flex;flex-direction:column;gap:10px}
+.form-group label{font-size:.95rem;color:rgba(255,255,255,.85);font-weight:600}
+.form-group input,.form-group select{width:100%;padding:14px 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;color:#fff;font-size:.95rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.form-group input:focus,.form-group select:focus{border-color:var(--cyan2);box-shadow:0 0 12px rgba(0,198,224,.18)}
+.form-group select{background-color:#0d2533;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300c6e0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+.form-group select option{background:#0d2533;color:#fff}
+.product-options{display:flex;gap:15px;flex-wrap:wrap;margin-top:10px}
+.product-card{flex:1;cursor:pointer}
+.product-card input[type="radio"]{position:absolute;opacity:0;width:1px;height:1px}
+.card-content{padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);text-align:center;transition:.3s ease;cursor:pointer}
+.card-content i{font-size:22px;margin-bottom:10px;color:var(--cyan2);display:block}
+.card-content h4{color:#fff;font-size:.9rem;margin-bottom:4px}
+.card-content p{color:rgba(255,255,255,.5);font-size:.78rem}
+.product-card:hover .card-content{transform:translateY(-4px);border-color:var(--cyan2)}
+.product-card input:checked+.card-content{border:2px solid var(--cyan2);box-shadow:0 0 18px rgba(34,198,224,.25)}
+.checkbox-label{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:.95rem;cursor:pointer}
+.checkbox-label input[type="checkbox"]{width:18px;height:18px;accent-color:var(--cyan2);flex-shrink:0;cursor:pointer}
+.btn-submit{width:100%;padding:16px;background:linear-gradient(135deg,#22d3ee,#3b82f6);border:none;border-radius:14px;color:#fff;font-size:1rem;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(34,211,238,.3)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+#successMessage{display:none;padding:32px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);border-radius:14px;margin-top:20px}
+#successMessage h3{color:#fff;font-size:1.3rem;margin-bottom:8px;font-weight:800}
+#successMessage p{color:#fff;font-weight:600}
+.cta-note{font-size:.78rem;color:rgba(255,255,255,.3);margin-top:16px}
+#errorMessage{font-size:.85rem;color:#f87171;min-height:20px}
+footer{background:var(--dark2);border-top:1px solid rgba(255,255,255,.07);padding:56px 5% 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto 40px}
+.footer-brand p{font-size:.85rem;color:rgba(255,255,255,.4);margin-top:14px;line-height:1.7;max-width:280px}
+.footer-col h5{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:.85rem;color:rgba(255,255,255,.6);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.footer-col ul a{font-size:.85rem;color:rgba(255,255,255,.35);text-decoration:none;transition:color .2s}
+.footer-col ul a:hover{color:rgba(0,198,224,.7)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.07);font-size:.78rem;color:rgba(255,255,255,.25);gap:16px;flex-wrap:wrap;max-width:1200px;margin:0 auto}
+@media(max-width:1100px){.ind-grid{grid-template-columns:repeat(2,1fr)}.uc-grid{grid-template-columns:1fr 1fr}.how-panel.active{grid-template-columns:1fr;gap:32px}.calling-card{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.services-grid,.plans-grid{grid-template-columns:1fr}.plans-grid{max-width:440px;margin:0 auto}.compare-header,.compare-row{grid-template-columns:1.5fr 1fr 1fr}}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.uc-grid,.ind-grid{grid-template-columns:1fr}.setup-banner{flex-direction:column;align-items:flex-start}.cr-feature,.ch-cell,.cr-ai,.cr-human{padding:12px 14px;font-size:.78rem}.footer-grid{grid-template-columns:1fr;gap:28px}.hero-stats{gap:20px}.product-options{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<main>
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <img src="logo.jpeg" alt="MashaAI Connect logo" width="38" height="38">
+    <div class="nav-logo-text">MashaAI <span>Connect</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#usecases">Use Cases</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#compare">AI vs Human</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Book a Demo →</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#how" onclick="closeMob()">How It Works</a>
+  <a href="#usecases" onclick="closeMob()">Use Cases</a>
+  <a href="#industries" onclick="closeMob()">Industries</a>
+  <a href="#compare" onclick="closeMob()">AI vs Human</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#cta" class="nav-cta" onclick="closeMob()">Book a Demo →</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <div class="hero-badge"><i class="fas fa-robot" aria-hidden="true"></i> AI-Powered Business Automation</div>
+  <h1>Book More Appointments.<br><span class="underline-cyan cyan">Close More Deals.</span> Automatically.</h1>
+  <p class="hero-sub">Deploy intelligent AI agents that set appointments and handle calls 24/7 - turning every lead into a booked meeting while your team sleeps.</p>
+  <div class="hero-cta-row">
+    <a href="#cta" class="btn-main">Book a Demo →</a>
+    <a href="#how" class="btn-ghost">▶ See How It Works</a>
+  </div>
+  <div class="hero-dashboard reveal">
+    <img src="dashboard.png" alt="MashaAI Connect dashboard showing live appointment tracking and AI call activity" width="1000" height="600">
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">98%</div><div class="stat-l">Response Rate</div></div>
+    <div class="stat"><div class="stat-n">3×</div><div class="stat-l">More Bookings</div></div>
+    <div class="stat"><div class="stat-n">24<span>/7</span></div><div class="stat-l">Always Active</div></div>
+    <div class="stat"><div class="stat-n">60%</div><div class="stat-l">Cost Reduction</div></div>
+  </div>
+</section>
+
+<section id="trusted">
+  <div class="trusted-inner">
+    <div class="trusted-label">Seamless integration across your tools</div>
+    <div class="trusted-logos">
+      <div class="tlogo">Twilio</div>
+      <div class="tlogo">Zapier</div>
+      <div class="tlogo">HubSpot</div>
+      <div class="tlogo">Salesforce</div>
+      <div class="tlogo">Slack</div>
+      <div class="tlogo">Zendesk</div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-inner">
+    <div class="section-center reveal">
+      <div class="tag">Our Services</div>
+      <h2 class="sec-title">Two AI Solutions. Infinite Scale.</h2>
+      <p class="sec-sub center">Purpose-built AI agents that work tirelessly - qualifying leads, booking calendars, and handling calls without any human supervision.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal">
+        <div class="svc-icon" aria-hidden="true"><i class="fas fa-calendar-alt"></i></div>
+        <h3>AI Appointment Setter</h3>
+        <p>Our AI engages leads captured from your website forms or ads - instantly reaching out, qualifying them through intelligent conversation, and booking confirmed appointments directly into your calendar. Zero manual effort.</p>
+        <ul class="svc-feats">
+          <li>Collects leads from website forms & ad campaigns</li>
+          <li>Instantly calls or messages each lead automatically</li>
+          <li>Qualifies prospects with dynamic conversation scripts</li>
+          <li>Books appointments directly to your calendar</li>
+          <li>Multi-channel: SMS, email, voice & WhatsApp</li>
+          <li>Integrates with Google Calendar, Calendly & custom calendars</li>
+        </ul>
+        <a href="#pricing" class="svc-link">View Pricing →</a>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+        <h3>AI Calling Agents</h3>
+        <p>Deploy human-like AI voice agents for outbound campaigns and inbound call handling. Natural, low-latency conversations that engage prospects, handle objections, and drive outcomes - at a fraction of the cost of a human team.</p>
+        <ul class="svc-feats">
+          <li>Human-like voice with &lt;500ms response latency</li>
+          <li>Outbound cold call campaigns at massive scale</li>
+          <li>Inbound call handling & intelligent routing</li>
+          <li>Live call transfer to human agents when needed</li>
+          <li>Auto call recordings, transcripts & summaries</li>
+          <li>Sentiment analysis & real-time analytics</li>
+          <li>Multi-language support for global reach</li>
+        </ul>
+        <a href="#pricing" class="svc-link">View Pricing →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="tag">How It Works</div>
+      <h2 class="sec-title">Live in days. ROI from Day One.</h2>
+      <p class="sec-sub">We handle everything. Our system builds, trains, integrates and deploys your AI - you just watch the appointments roll in.</p>
+    </div>
+    <div class="how-tabs reveal">
+      <button class="how-tab active" onclick="switchTab('setter',this)"><i class="fas fa-calendar-alt" aria-hidden="true"></i> AI Appointment Setter</button>
+      <button class="how-tab" onclick="switchTab('caller',this)"><i class="fas fa-phone" aria-hidden="true"></i> AI Calling Agent</button>
+    </div>
+    <div class="how-panels">
+      <div class="how-panel active" id="tab-setter">
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num" aria-hidden="true">01</div><div class="step-body"><h4>Lead Captured from Website or Ad Form</h4><p>A prospect submits a form on your website, Facebook ad, or landing page. The lead data is instantly sent to MashaAI Connect in real time.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">02</div><div class="step-body"><h4>AI Calls the Lead Within Seconds</h4><p>Our AI agent places a call to the lead within 60 seconds - when their interest is highest. It introduces itself naturally and starts a qualifying conversation.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">03</div><div class="step-body"><h4>Qualifies & Handles Objections</h4><p>The AI asks your custom qualifying questions, handles common objections intelligently, and determines if the prospect is a good fit for your offer.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">04</div><div class="step-body"><h4>Books Appointment into Your Calendar</h4><p>Once qualified, the AI checks your live calendar availability, confirms a time with the prospect, and books the appointment - all in a single call.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">05</div><div class="step-body"><h4>Sends Reminders & Reduces No-Shows</h4><p>Automated SMS and email reminders are sent before the appointment, dramatically reducing no-shows and cancellations.</p></div></div>
+        </div>
+        <div class="how-visual">
+          <div class="how-visual-title">Live Lead Flow</div>
+          <div class="flow">
+            <div class="flow-node"><div class="flow-icon c" aria-hidden="true"><i class="fas fa-clipboard-list"></i></div><div class="flow-text"><strong>Lead Form Submitted</strong><br>Website / Facebook Ad / Google Ad</div></div>
+            <div class="flow-arrow" aria-hidden="true">↓ &nbsp;Instant trigger (0–60 sec)</div>
+            <div class="flow-node"><div class="flow-icon c" aria-hidden="true"><i class="fas fa-robot"></i></div><div class="flow-text"><strong>AI Agent Calls Lead</strong><br>Natural voice, personalized script</div></div>
+            <div class="flow-arrow" aria-hidden="true">↓ &nbsp;Qualification conversation</div>
+            <div class="flow-node"><div class="flow-icon c" aria-hidden="true"><i class="fas fa-check-circle"></i></div><div class="flow-text"><strong>Prospect Qualified</strong><br>Objections handled, fit confirmed</div></div>
+            <div class="flow-arrow" aria-hidden="true">↓ &nbsp;Calendar sync</div>
+            <div class="flow-node"><div class="flow-icon g" aria-hidden="true"><i class="fas fa-calendar-alt"></i></div><div class="flow-text"><strong>Appointment Booked</strong><br>Confirmation sent via SMS & email</div></div>
+            <div class="flow-arrow" aria-hidden="true">↓ &nbsp;24–48 hrs before</div>
+            <div class="flow-node"><div class="flow-icon o" aria-hidden="true"><i class="fas fa-bell"></i></div><div class="flow-text"><strong>Reminder Sent</strong><br>Automated follow-up, zero no-shows</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="how-panel" id="tab-caller">
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num" aria-hidden="true">01</div><div class="step-body"><h4>Upload Your Contact List</h4><p>Provide your list of prospects - cold leads, old database contacts, or warm leads. Our system prepares personalized call scripts for each segment.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">02</div><div class="step-body"><h4>AI Launches Outbound Campaign</h4><p>The AI calling agent dials hundreds of contacts simultaneously with human-like conversation. No hold music, no delays - just natural dialogue.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">03</div><div class="step-body"><h4>Engages & Handles Inbound Calls</h4><p>For inbound, the AI answers every call instantly - no hold times. It routes callers intelligently or resolves queries end-to-end.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">04</div><div class="step-body"><h4>Live Transfer to Human When Needed</h4><p>When a prospect is ready to buy or requires complex handling, the AI seamlessly transfers the live call to your human team with full context.</p></div></div>
+          <div class="how-step"><div class="step-num" aria-hidden="true">05</div><div class="step-body"><h4>Full Analytics & Transcripts</h4><p>Every call is recorded, transcribed, and summarized. Review performance, listen to calls, and use AI-generated insights to optimize your campaigns.</p></div></div>
+        </div>
+        <div class="how-visual">
+          <div class="how-visual-title">Live Call Activity</div>
+          <div class="call-log">
+            <div class="clog"><div class="clog-av" aria-hidden="true">JD</div><div class="clog-info"><div class="clog-name">James Davidson</div><div class="clog-sub">Outbound Campaign · 2 min ago</div></div><div class="clog-badge cb-booked">Booked</div></div>
+            <div class="clog"><div class="clog-av" aria-hidden="true">SR</div><div class="clog-info"><div class="clog-name">Sarah Reynolds</div><div class="clog-sub">Inbound Call · Live now</div></div><div style="display:flex;align-items:center;gap:8px"><div class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><div class="clog-badge cb-live">Live</div></div></div>
+            <div class="clog"><div class="clog-av" aria-hidden="true">MK</div><div class="clog-info"><div class="clog-name">Mike Kowalski</div><div class="clog-sub">Outbound Campaign · 6 min ago</div></div><div class="clog-badge cb-q">Transferred</div></div>
+            <div class="clog"><div class="clog-av" aria-hidden="true">AP</div><div class="clog-info"><div class="clog-name">Aisha Patel</div><div class="clog-sub">Outbound Campaign · 11 min ago</div></div><div class="clog-badge cb-booked">Booked</div></div>
+            <div class="clog"><div class="clog-av" aria-hidden="true">TR</div><div class="clog-info"><div class="clog-name">Tom Richards</div><div class="clog-sub">Inbound Call · 14 min ago</div></div><div class="clog-badge cb-q">Resolved</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="usecases" class="section">
+  <div class="section-inner">
+    <div class="section-center reveal">
+      <div class="tag">Use Cases</div>
+      <h2 class="sec-title">Every Business Scenario. Covered.</h2>
+      <p class="sec-sub center">From cold outreach to inbound follow-up - see exactly how businesses like yours use MashaAI Connect to grow revenue.</p>
+    </div>
+    <div class="uc-grid">
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-bullseye"></i></div><h4>Lead Follow-Up Automation</h4><p>Instantly follow up with every lead from your ads or website. The AI contacts them within 60 seconds, before your competitors even see the inquiry.</p><div class="uc-tag">Appointment Setter</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-calendar-check"></i></div><h4>Demo & Discovery Call Booking</h4><p>For SaaS, consulting, and services businesses. The AI qualifies inbound leads and fills your sales team's calendar with high-intent discovery calls automatically.</p><div class="uc-tag">Appointment Setter</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-home"></i></div><h4>Property Viewing Scheduling</h4><p>Real estate agents use MashaAI to instantly respond to property enquiries, pre-qualify buyers, and schedule viewings. All without lifting a finger.</p><div class="uc-tag">Appointment Setter</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-phone"></i></div><h4>Cold Calling at Scale</h4><p>Replace your entire SDR team's cold calling effort with AI agents that dial hundreds of prospects a day, pitch your offer, and transfer hot leads instantly.</p><div class="uc-tag">AI Calling Agent</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-redo"></i></div><h4>Reactivating Old Leads</h4><p>Have a database of cold leads? The AI runs reactivation campaigns - calling and messaging dormant contacts to revive pipeline from leads you already paid for.</p><div class="uc-tag">AI Calling Agent</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-hospital"></i></div><h4>Patient Appointment Reminders</h4><p>Healthcare providers use AI calling agents to confirm upcoming appointments, handle rescheduling requests, and dramatically reduce costly no-shows.</p><div class="uc-tag">AI Calling Agent</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></div><h4>Insurance Policy Follow-Up</h4><p>Insurance agencies automate follow-up on quote requests, nurture undecided prospects with timely calls, and convert more leads into policy sales.</p><div class="uc-tag">Appointment Setter</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-chart-bar"></i></div><h4>Customer Satisfaction Surveys</h4><p>Automatically call customers post-purchase or post-service to gather feedback, identify detractors early, and collect testimonials at scale.</p><div class="uc-tag">AI Calling Agent</div></div>
+      <div class="uc-card reveal"><div class="uc-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div><h4>Enrollment & Admissions Calls</h4><p>Education businesses and coaching programs use AI setters to contact course inquiries, answer questions, and enroll students directly into programs.</p><div class="uc-tag">Both Services</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="industries" class="section">
+  <div class="section-inner">
+    <div class="section-center reveal">
+      <div class="tag">Industries We Serve</div>
+      <h2 class="sec-title">Built for Every Sector</h2>
+      <p class="sec-sub center">MashaAI Connect is customized for your industry's language, compliance needs, and buyer behavior.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-home"></i></div><h4>Real Estate</h4><p>Instant buyer & seller lead follow-up, viewing scheduling, and property tour booking</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-dollar-sign"></i></div><h4>Financial Services</h4><p>Mortgage brokers, investment advisors, and loan officers automating client acquisition</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-hospital"></i></div><h4>Healthcare & Medical</h4><p>Clinics, dentists, and specialists automating patient booking and appointment reminders</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></div><h4>Insurance</h4><p>Quote follow-up, policy renewals, and lead nurturing for insurance agencies at scale</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div><h4>Education & Coaching</h4><p>Course enrollment, free consultation booking, and student follow-up automation</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-laptop"></i></div><h4>SaaS & Tech</h4><p>Demo call scheduling, free trial follow-up, and outbound pipeline generation</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-tools"></i></div><h4>Home Services</h4><p>HVAC, roofing, solar, and contractors booking estimates and service appointments</p></div>
+      <div class="ind-card reveal"><div class="ind-icon" aria-hidden="true"><i class="fas fa-balance-scale"></i></div><h4>Legal Services</h4><p>Law firms automating initial consultation scheduling and case intake qualification</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="section">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="tag">AI vs Human</div>
+      <h2 class="sec-title">Why AI Wins - Every Time</h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,.5)">Compare what you get with MashaAI Connect versus a traditional human sales or appointment-setting team.</p>
+    </div>
+    <div class="compare-wrap reveal">
+      <div class="compare-header">
+        <div class="ch-cell" style="color:rgba(255,255,255,.3)">Capability</div>
+        <div class="ch-cell ch-ai"><i class="fas fa-robot" aria-hidden="true"></i> MashaAI Connect</div>
+        <div class="ch-cell ch-human"><i class="fas fa-user" aria-hidden="true"></i> Human Team</div>
+      </div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-clock" aria-hidden="true"></i> Response Time to New Lead</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Under 60 seconds</div><div class="cr-human"><i class="fas fa-clock" aria-hidden="true"></i> 30 min – 24 hrs</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-clock" aria-hidden="true"></i> Working Hours</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> 24 hours / 7 days</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> 9am–5pm weekdays</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-chart-line" aria-hidden="true"></i> Scalability</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Unlimited - 100s of calls at once</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Limited to headcount</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-dollar-sign" aria-hidden="true"></i> Monthly Cost</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> From $399/month</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> $3,000–$6,000+ per rep</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-chart-bar" aria-hidden="true"></i> Performance Consistency</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> 100% consistent, every call</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Varies by mood, fatigue, skill</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-redo" aria-hidden="true"></i> Follow-Up Persistence</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Never gives up on a lead</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Often forgets or stops after 2–3 tries</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Booking Rate</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Up to 3× higher conversion</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Varies wildly</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-edit" aria-hidden="true"></i> CRM & Calendar Integration</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Fully automated & real-time</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Manual entry, often missed</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-globe" aria-hidden="true"></i> Multi-Language Support</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> 5+ languages</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Requires multilingual hires</div></div>
+      <div class="compare-row"><div class="cr-feature"><i class="fas fa-umbrella-beach" aria-hidden="true"></i> Sick Days / Vacation / Turnover</div><div class="cr-ai"><i class="fas fa-check" aria-hidden="true"></i> Zero downtime, ever</div><div class="cr-human"><i class="fas fa-times" aria-hidden="true"></i> Pipeline stops immediately</div></div>
+      <div class="compare-footer">
+        <p><i class="fas fa-rocket" aria-hidden="true"></i> <strong>MashaAI Connect delivers 3× more appointments at 60% less cost</strong> than a traditional appointment-setting team - and it scales infinitely.</p>
+        <a href="#cta" class="btn-main" style="font-size:.875rem;padding:11px 22px">Get Started →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="section-inner">
+    <div class="section-center reveal">
+      <div class="tag">Transparent Pricing</div>
+      <h2 class="sec-title">Simple. Honest. No Surprises.</h2>
+      <p class="sec-sub center">Choose your service. All plans include onboarding support and a 14-day satisfaction guarantee.</p>
+      <div class="pricing-toggle">
+        <button class="ptab active" onclick="switchPricing('setter',this)"><i class="fas fa-calendar-alt" aria-hidden="true"></i> AI Appointment Setter</button>
+        <button class="ptab" onclick="switchPricing('caller',this)"><i class="fas fa-phone" aria-hidden="true"></i> AI Calling Agents</button>
+      </div>
+    </div>
+    <div class="pricing-section active" id="price-setter">
+      <div class="setup-banner reveal">
+        <div class="setup-banner-left"><h3>One-Time Setup Fee</h3><p>We build, deploy, configure and fully test your AI Appointment Setter - done for you, ready in days not months.</p></div>
+        <div class="setup-price"><span>$</span>700</div>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card reveal"><div class="plan-name">Starter</div><div class="plan-price"><sup>$</sup>399</div><div class="plan-period">per month</div><p class="plan-desc">Perfect for solo operators and small teams getting started with AI appointment automation.</p><ul class="plan-feats"><li>AI appointment setter system</li><li>Lead follow-up automation</li><li>Calendar booking integration</li><li>Email support</li><li><strong>250 lead calls/month</strong></li><li>Basic analytics dashboard</li></ul><a href="#cta" class="plan-btn plan-btn-outline">Get Started</a></div>
+        <div class="plan-card popular reveal"><div class="plan-name">Growth</div><div class="plan-price"><sup>$</sup>799</div><div class="plan-period">per month</div><p class="plan-desc">The most popular plan for scaling businesses that want maximum automation and performance.</p><ul class="plan-feats"><li>Everything in Starter</li><li>Advanced automation flows</li><li>Smart follow-up sequences</li><li>CRM integration (GHL, HubSpot)</li><li><strong>550 lead calls/month</strong></li><li>Priority support</li></ul><a href="#cta" class="plan-btn plan-btn-fill">Get Started</a></div>
+        <div class="plan-card reveal"><div class="plan-name">Pro</div><div class="plan-price"><sup>$</sup>1,399</div><div class="plan-period">per month</div><p class="plan-desc">For high-volume teams and agencies needing multi-workflow automation and deep integrations.</p><ul class="plan-feats"><li>Everything in Growth</li><li>Multi-workflow automation</li><li>Advanced CRM & API integrations</li><li><strong>1000 lead calls/month</strong></li><li>Dedicated account manager</li><li>Custom reporting & analytics</li></ul><a href="#cta" class="plan-btn plan-btn-outline">Get Started</a></div>
+      </div>
+    </div>
+    <div class="pricing-section" id="price-caller">
+      <div class="calling-card reveal">
+        <div class="calling-info">
+          <h3>AI Calling Agents — Pricing</h3>
+          <p>Our AI Calling Agents operate on a simple, transparent model: a one-time setup fee plus pay-as-you-go usage. No monthly seat fees, no surprises. Scale as much or as little as you need.</p>
+          <ul class="calling-feats"><li>Human-like voice AI agent fully customized for your business</li><li>Inbound & outbound call handling</li><li>Live call transfers to your team</li><li>Full call recordings & transcripts</li><li>CRM & calendar integration included</li><li>Analytics dashboard with performance metrics</li><li>Multi-language support for global campaigns</li><li>Sentiment analysis & AI call summaries</li></ul>
+          <a href="#cta" class="btn-main">Get Started →</a>
+        </div>
+        <div class="calling-pricing-box">
+          <h4>AI Calling Agent Pricing</h4>
+          <div class="calling-setup"><div class="cs-label">One-Time Setup Fee</div><div class="cs-val">$700</div><div class="cs-sub">Full build, deploy & testing done for you</div></div>
+          <div class="calling-usage"><div class="cu-label">Usage Fee</div><div class="cu-val">$0.40</div><div class="cu-sub">per minute of call time<br>Only pay for what you use</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-blob" aria-hidden="true"></div>
+  <div class="cta-inner reveal">
+    <div class="tag" style="margin-bottom:18px">Get Started Today</div>
+    <h2>Ready to Fill Your Calendar on <span style="color:var(--cyan3)">Autopilot?</span></h2>
+    <p>Join forward-thinking businesses generating more appointments and more revenue with MashaAI Connect. Book a free demo call — no credit card needed.</p>
+    <form class="cta-form" id="demoForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="3aa93d8f-dec2-4a6a-9e8f-c4b84841298f">
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" autocomplete="name" required placeholder="Your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label for="company">Company *</label>
+        <input type="text" id="company" name="company" autocomplete="organization" required placeholder="Your company name">
+      </div>
+      <div class="form-group">
+        <label for="industry">Industry *</label>
+        <select id="industry" name="industry" required>
+          <option value="">Select your industry</option>
+          <option>Healthcare</option>
+          <option>E-Commerce</option>
+          <option>FinTech</option>
+          <option>Education</option>
+          <option>Real Estate</option>
+          <option>Insurance</option>
+          <option>SaaS / Tech</option>
+          <option>Legal Services</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Select Product *</label>
+        <div class="product-options">
+          <label class="product-card">
+            <input type="radio" name="product" value="AI Calling Agents" required>
+            <div class="card-content"><i class="fas fa-phone-alt" aria-hidden="true"></i><h4>AI Calling Agents</h4><p>Automate customer calls with AI</p></div>
+          </label>
+          <label class="product-card">
+            <input type="radio" name="product" value="AI Appointment Setter">
+            <div class="card-content"><i class="fas fa-calendar-check" aria-hidden="true"></i><h4>AI Appointment Setter</h4><p>Automate booking & outreach</p></div>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" name="terms" required>
+          I agree to receive communications *
+        </label>
+      </div>
+      <div id="errorMessage" role="alert" aria-live="polite"></div>
+      <button type="submit" class="btn-submit">Schedule Demo</button>
+    </form>
+    <div id="successMessage" role="alert">
+      <h3>✅ Demo Booked Successfully!</h3>
+      <p>We'll contact you within 24 hours.</p>
+    </div>
+    <p class="cta-note">✓ No credit card required &nbsp;·&nbsp; ✓ Live in days &nbsp;·&nbsp; ✓ Cancel anytime</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">
+        <img src="logo.jpeg" alt="MashaAI Connect logo" width="34" height="34" style="border-radius:8px;object-fit:contain">
+        <div class="nav-logo-text" style="color:#fff">MashaAI <span>Connect</span></div>
+      </a>
+      <p>Intelligent AI automation that books more appointments, handles more calls, and drives more revenue — without adding headcount.</p>
+    </div>
+    <div class="footer-col"><h5>Services</h5><ul><li><a href="#services">AI Appointment Setter</a></li><li><a href="#services">AI Calling Agents</a></li><li><a href="#how">How It Works</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+    <div class="footer-col"><h5>Industries</h5><ul><li><a href="#industries">Real Estate</a></li><li><a href="#industries">Healthcare</a></li><li><a href="#industries">Financial Services</a></li><li><a href="#industries">Insurance</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="#usecases">Use Cases</a></li><li><a href="#compare">AI vs Human</a></li><li><a href="#cta">Contact Us</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 MashaAI Connect. All rights reserved.</div>
+  </div>
+</footer>
+
+<script defer>
+const nav=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');hamburger.setAttribute('aria-expanded',o)});
+function closeMob(){mobileMenu.classList.remove('open');hamburger.setAttribute('aria-expanded','false')}
+const revealObs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*55);revealObs.unobserve(e.target)}})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(r=>revealObs.observe(r));
+function switchTab(id,btn){document.querySelectorAll('.how-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.how-tab').forEach(t=>t.classList.remove('active'));document.getElementById('tab-'+id).classList.add('active');btn.classList.add('active')}
+function switchPricing(id,btn){document.querySelectorAll('.pricing-section').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.ptab').forEach(t=>t.classList.remove('active'));document.getElementById('price-'+id).classList.add('active');btn.classList.add('active')}
+const demoForm=document.getElementById('demoForm');
+const successMessage=document.getElementById('successMessage');
+const errorMessage=document.getElementById('errorMessage');
+demoForm.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  errorMessage.textContent='';
+  const btn=demoForm.querySelector('button[type="submit"]');
+  btn.disabled=true;btn.textContent='Sending...';
+  try{
+    const res=await fetch(demoForm.action,{method:'POST',body:new FormData(demoForm)});
+    if(!res.ok){const d=await res.json().catch(()=>({}));throw new Error(d.message||'Submission failed. Please try again.')}
+    demoForm.style.display='none';successMessage.style.display='block';
+  }catch(err){errorMessage.textContent=err.message}
+  finally{btn.disabled=false;btn.textContent='Schedule Demo'}
+});
+</script>
+</body>
+</html>
