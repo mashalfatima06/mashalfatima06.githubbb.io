@@ -248,7 +248,9 @@ h1 .underline-cyan::after{content:'';position:absolute;bottom:-4px;left:0;right:
 .product-card:hover .card-content{transform:translateY(-4px);border-color:var(--cyan2)}
 .product-card input:checked+.card-content{border:2px solid var(--cyan2);box-shadow:0 0 18px rgba(34,198,224,.25)}
 .checkbox-label{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.8);font-size:.95rem;cursor:pointer}
-.checkbox-label input[type="checkbox"]{width:18px;height:18px;accent-color:var(--cyan2);flex-shrink:0;cursor:pointer}
+.checkbox-label input[type="checkbox"]{width:18px;height:18px;flex-shrink:0;cursor:pointer;appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.3);border-radius:4px;transition:all .2s;position:relative}
+.checkbox-label input[type="checkbox"]:checked{background:var(--cyan2);border-color:var(--cyan2)}
+.checkbox-label input[type="checkbox"]:checked::after{content:'✓';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:13px;font-weight:900;line-height:1}
 .btn-submit{width:100%;padding:16px;background:linear-gradient(135deg,#22d3ee,#3b82f6);border:none;border-radius:14px;color:#fff;font-size:1rem;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:transform .25s,box-shadow .25s}
 .btn-submit:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(34,211,238,.3)}
 .btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
